@@ -1,0 +1,13 @@
+
+1. To create a docker database
+
+docker run --name micro-dbs -e MYSQL_ROOT_PASSWORD=root -d -p 3310:3306 mysql:latest
+
+2. To get into db to create database and fill dummy data
+
+docker exec -it micro-dbs bash
+mysql -u root -p
+
+3. Dummy data :
+
+execute .sql file in db.scripts folder
